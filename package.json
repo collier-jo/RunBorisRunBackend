@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/GarethWoodman/run_boris_run_backend#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25"
   }
 }
