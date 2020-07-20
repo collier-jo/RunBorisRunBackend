@@ -1,0 +1,22 @@
+{
+  "name": "run_boris_run_backend",
+  "version": "1.0.0",
+  "description": "Scores will be stored in a hosted JSON file where the front-end will make API requests to display score records on a scoreboard.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarethWoodman/run_boris_run_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarethWoodman/run_boris_run_backend/issues"
+  },
+  "homepage": "https://github.com/GarethWoodman/run_boris_run_backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
