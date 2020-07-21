@@ -1,10 +1,11 @@
-import mongoose from 'mongoose';
- 
+const mongoose = require('mongoose');
+
 const scoreboardSchema = new mongoose.Schema({
-  name: string, 
-  score: integer 
+  name: String,
+  score: Number
 });
- 
+
 const Scoreboard = mongoose.model('Scoreboard', scoreboardSchema);
- 
-export default Scoreboard;
+
+module.exports = Scoreboard;
+// export default Scoreboard;

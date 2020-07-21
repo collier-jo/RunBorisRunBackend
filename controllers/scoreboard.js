@@ -1,18 +1,22 @@
+var Scoreboard = require('../models/scoreboard');
+
 var ScoreboardController = {
-  Hello: function(request, response) {
-    response.send("Hello World!")
-
-  },
   View: function(request, response){
-
+    Scoreboard.find(function(err, result) {
+      response.send(result);
+    });
   },
-  Create: function(request, response){
 
+  Create: function(request, response){
+    // change the hardcoded values
+    var newScore = new Scoreboard({name: "hibo", score: 200})
+
+     newScore.save(function(err){  
+      response.send('saved') 
+    }); 
+
+    response.redirect('/')
   }
 };
 
 module.exports = ScoreboardController;
-
-// app.get('/', (req, res) => res.send('Hello World!'))
-// install mongoose
-// npm install mongoose --save
