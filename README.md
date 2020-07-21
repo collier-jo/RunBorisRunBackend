@@ -4,4 +4,4 @@ Scores will be stored in a hosted JSON file where the front-end will make API re
 
 App.js - Sets up routes, Express etc. Routes folder - /Scoreboard Contoller folder - Scoreboard Controller Tests for Scoreboard Model and Controller Model folder - Scoreboard mongo file
 
-TechStack - Mongoose, MongoDB, Express, Node, Jest, BodyParser, Cors
+TechStack - Mongoose, MongoDB, Express, Node, Jest, BodyParser, Cors, Dotenv
