@@ -3,6 +3,12 @@ var ScoreboardController = {
     res.send("Hello World!")
 
   },
+  View: function(request, response){
+    
+  },
+  Create: function(request, response){
+    
+  }
 };
   
 module.exports = ScoreboardController;
