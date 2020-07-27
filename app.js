@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv/config');
 const mongoose = require("mongoose")
+const bodyParser = require('body-parser')
 const app = express()
 
 mongoose.connect("mongodb://localhost/run_boris_run", {
@@ -17,6 +18,8 @@ mongoose.connection.on("connected", (err, res) => {
 })
 
 app.use(cors());
+
+app.use(bodyParser.json());
 
 var ScoreController = require('./controllers/scoreboard');
 
