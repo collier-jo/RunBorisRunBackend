@@ -8,7 +8,6 @@ var ScoreboardController = {
   },
 
   Create: function(request, response){
-    // change the hardcoded values
     var newScore = new Scoreboard({name: request.body.name, score: request.body.score})
 
      newScore.save(function(err){  
