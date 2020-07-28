@@ -40,20 +40,4 @@ describe('Scoreboard Model Test', () => {
         expect(savedScoreboardWithInvalidField._id).toBeDefined();
         expect(savedScoreboardWithInvalidField.message).toBeUndefined();
     });
-    //
-    // // Test Validation is working!!!
-    // // It should us told us the errors in on gender field.
-    // it('create user without required field should failed', async () => {
-    //     const userWithoutRequiredField = new UserModel({ name: 'TekLoon' });
-    //     let err;
-    //     try {
-    //         const savedUserWithoutRequiredField = await userWithoutRequiredField.save();
-    //         error = savedUserWithoutRequiredField;
-    //     } catch (error) {
-    //         err = error
-    //     }
-    //     expect(err).toBeInstanceOf(mongoose.Error.ValidationError)
-    //     expect(err.errors.gender).toBeDefined();
-    // });
-
 })
