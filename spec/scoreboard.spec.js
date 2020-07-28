@@ -32,14 +32,14 @@ describe('Scoreboard Model Test', () => {
         expect(savedScoreboard.score).toBe(scoreboard.score);
     });
 
-    // // Test Schema is working!!!
-    // // You shouldn't be able to add in any field that isn't defined in the schema
-    // it('insert user successfully, but the field does not defined in schema should be undefined', async () => {
-    //     const userWithInvalidField = new UserModel({ name: 'TekLoon', gender: 'Male', nickname: 'Handsome TekLoon' });
-    //     const savedUserWithInvalidField = await userWithInvalidField.save();
-    //     expect(savedUserWithInvalidField._id).toBeDefined();
-    //     expect(savedUserWithInvalidField.nickkname).toBeUndefined();
-    // });
+    // Test Schema is working!!!
+    // You shouldn't be able to add in any field that isn't defined in the schema
+    it('insert scoreboard successfully, but the field does not defined in schema should be undefined', async () => {
+        const scoreboardWithInvalidField = new ScoreboardModel({ name: 'hibo', score: 100, message: 'this is invalid' });
+        const savedScoreboardWithInvalidField = await scoreboardWithInvalidField.save();
+        expect(savedScoreboardWithInvalidField._id).toBeDefined();
+        expect(savedScoreboardWithInvalidField.message).toBeUndefined();
+    });
     //
     // // Test Validation is working!!!
     // // It should us told us the errors in on gender field.
