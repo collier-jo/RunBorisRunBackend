@@ -4,7 +4,7 @@
   "description": "Scores will be stored in a hosted JSON file where the front-end will make API requests to display score records on a scoreboard.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jest": "^26.1.0",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.25"
   }
