@@ -8,18 +8,18 @@ const app = express()
 
 // mongoose.connect("mongodb://localhost/run_boris_run", { useNewUrlParser: "true" })
 
-// mongoose.connect("mongodb://localhost/run_boris_run", {useNewUrlParser:"true"}).catch(function (reason) {
-//   console.log('Unable to connect to the mongodb instance. Error: ', reason);
-// });
+mongoose.connect("mongodb://localhost/run_boris_run", {useNewUrlParser:"true"}).catch(function (reason) {
+  console.log('Unable to connect to the mongodb instance. Error: ', reason);
+});
 
 
 
-var url = 'mongodb://localhost:27017/run_boris_run'
-mongoose.connect(url)
-  .then(function (db) { // <- db as first argument
-    console.log(db)
-  })
-  .catch(function (err) {})
+// var url = 'mongodb://localhost:27017/run_boris_run'
+// mongoose.connect(url)
+//   .then(function (db) { // <- db as first argument
+//     console.log(db)
+//   })
+//   .catch(function (err) {})
 
 
 mongoose.connection.on("error", err => {
