@@ -4,7 +4,7 @@ const dotenv = require('dotenv/config');
 const mongoose = require("mongoose")
 const bodyParser = require('body-parser')
 const app = express()
-const timeout = require('connect-timeout')
+
 
 mongoose.connect("mongodb://localhost/run_boris_run", {
   useNewUrlParser: "true",
@@ -21,7 +21,7 @@ mongoose.connection.on("connected", (err, res) => {
 app.use(cors());
 
 app.use(bodyParser.json());
-app.use(timeout('10s'))
+
 
 var ScoreController = require('./controllers/scoreboard');
 
