@@ -21,7 +21,7 @@ mongoose.connection.on("connected", (err, res) => {
 app.use(cors());
 
 app.use(bodyParser.json());
-app.use(timeout('5s'))
+app.use(timeout('10s'))
 
 var ScoreController = require('./controllers/scoreboard');
 
