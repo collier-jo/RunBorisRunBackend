@@ -6,9 +6,11 @@ const bodyParser = require('body-parser')
 const app = express()
 
 
-mongoose.connect("mongodb://localhost/run_boris_run", {
-  useNewUrlParser: "true",
-})
+// mongoose.connect("mongodb://localhost/run_boris_run", { useNewUrlParser: "true" })
+
+mongoose.connect("mongodb://localhost/run_boris_run", {useNewUrlParser:"true"}).catch(function (reason) {
+  console.log('Unable to connect to the mongodb instance. Error: ', reason);
+});
 
 mongoose.connection.on("error", err => {
   console.log("err", err)
