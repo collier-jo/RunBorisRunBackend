@@ -28,4 +28,5 @@ var ScoreController = require('./controllers/scoreboard');
 app.get('/', ScoreController.View)
 app.post('/new', ScoreController.Create)
 
-app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`))
+// app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`))
+app.listen(process.env.PORT || 3000);
