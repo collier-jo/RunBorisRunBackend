@@ -4,7 +4,8 @@
   "description": "Scores will be stored in a hosted JSON file where the front-end will make API requests to display score records on a scoreboard.",
   "main": "app.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
