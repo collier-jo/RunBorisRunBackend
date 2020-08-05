@@ -10,10 +10,14 @@ var ScoreboardController = {
   Create: function(request, response){
     var newScore = new Scoreboard({name: request.body.name, score: request.body.score})
 
-    
+
     newScore.save(function(err){
       response.send('saved')
     });
+  },
+
+  Delete: function(request, response){
+    Scoreboard.remove()
   }
 };
 
