@@ -17,7 +17,9 @@ var ScoreboardController = {
   },
 
   Delete: function(request, response){
-    Scoreboard.remove()
+    Scoreboard.deleteMany(name: "testing")
+
+    response.send("saved")
   }
 };
 
