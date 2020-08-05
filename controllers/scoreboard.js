@@ -15,6 +15,13 @@ var ScoreboardController = {
       response.send('saved')
     });
   },
+
+  Delete: function(req, res){
+    db.myColl.deleteOne({ _id: "5f2a9689b1256a0017b99db6"}
+    )
+    res.send("saved")
+    
+  }
 };
 
 module.exports = ScoreboardController;
