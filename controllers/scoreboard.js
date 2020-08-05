@@ -15,12 +15,6 @@ var ScoreboardController = {
       response.send('saved')
     });
   },
-
-  Delete: function(request, response){
-    Scoreboard.deleteMany(name: "testing")
-
-    response.send("saved")
-  }
 };
 
 module.exports = ScoreboardController;
